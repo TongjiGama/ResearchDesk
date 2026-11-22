@@ -1,0 +1,84 @@
+/* M2 — 论文脉络模块增强样式（浅色 / 霓虹双主题适配） */
+.lineage-v5-shell { display: flex; flex-direction: column; gap: 10px; }
+.lineage-top-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lineage-skill-select { padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); font-size: 12px; max-width: 200px; }
+
+.lineage-subtabs { display: flex; gap: 6px; border-bottom: 1px solid var(--border); padding-bottom: 8px; flex-wrap: wrap; }
+.lineage-subtab { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 7px; font-size: 12px; color: var(--text-2); border: 1px solid transparent; background: var(--surface-2); }
+.lineage-subtab:hover { border-color: var(--accent); color: var(--accent); }
+.lineage-subtab.active { background: var(--accent); color: #fff; font-weight: 600; }
+
+.lineage-tab-pane { display: none; }
+.lineage-tab-pane.active { display: flex; flex-direction: column; gap: 10px; min-height: 0; flex: 1; }
+
+.lineage-pathbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding-top: 8px; border-top: 1px dashed var(--border); margin-top: 6px; }
+.lineage-pathbar select { padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); font-size: 12px; max-width: 220px; }
+.lineage-path-result { font-size: 12px; color: var(--green); font-weight: 500; }
+.lineage-path-result.is-error { color: var(--red); }
+
+.lineage-hydrate-banner { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 8px; background: var(--amber-weak); border: 1px solid var(--amber); color: var(--text); font-size: 12px; }
+
+.timeline-backbone-guide { stroke: var(--border); stroke-width: 1; stroke-dasharray: 4 4; opacity: 0.7; }
+.timeline-node.is-path-node .node-ring { stroke: var(--amber) !important; stroke-width: 3 !important; }
+.timeline-node.is-path-node .timeline-node-label { font-weight: 700; }
+.timeline-edge.is-path-edge { stroke: var(--amber) !important; stroke-width: 3 !important; opacity: 1 !important; }
+
+.lineage-empty-panel { padding: 38px 24px; text-align: center; background: var(--surface-2); border: 1px dashed var(--border-strong); border-radius: 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--text-2); }
+.lineage-empty-panel h3 { color: var(--text); font-size: 15px; }
+.lineage-empty-panel p { max-width: 560px; font-size: 12px; }
+
+.lineage-syn-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 12px; }
+.lineage-syn-full { grid-column: 1 / -1; }
+.lineage-syn-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.lsc-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lsc-head h3 { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--text); }
+.lsc-badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: var(--surface-3); color: var(--text-2); }
+.lsc-badge.is-ok { background: var(--green-weak); color: var(--green); }
+.lsc-badge.is-warn { background: var(--amber-weak); color: var(--amber); }
+.lsc-badge.is-ai { background: var(--purple-weak); color: var(--purple); }
+.lsc-narrative { font-size: 13px; line-height: 1.7; color: var(--text); }
+.lsc-eras { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 12px; color: var(--text-2); }
+.lsc-era-chip { padding: 2px 8px; border-radius: 10px; background: var(--accent-weak); color: var(--accent); font-weight: 600; }
+
+.lsc-gap-list { display: flex; flex-direction: column; gap: 10px; }
+.lsc-gap-item { padding: 10px 12px; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; background: var(--surface-2); display: flex; flex-direction: column; gap: 6px; }
+.lsc-gap-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.lsc-gap-dir { font-size: 12px; color: var(--accent); }
+.lsc-gap-refs { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.lsc-queue { padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+.lsc-q-head { display: flex; align-items: center; gap: 8px; }
+.lsc-stage { font-size: 10px; padding: 1px 6px; border-radius: 8px; background: var(--accent-weak); color: var(--accent); }
+.lsc-q-reason { font-size: 12px; color: var(--text-2); margin-top: 2px; }
+.lsc-edge-list { display: flex; flex-direction: column; gap: 6px; max-height: 220px; overflow-y: auto; }
+.lsc-edge-row { font-size: 12px; display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; padding: 4px 6px; border-radius: 6px; background: var(--surface-2); }
+.lsc-edge-type { font-size: 10px; padding: 1px 6px; border-radius: 8px; background: var(--purple-weak); color: var(--purple); }
+
+.lineage-matrix-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.lineage-matrix-table td { vertical-align: top; max-width: 240px; }
+
+.lineage-missing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.lineage-seed-list { display: flex; flex-direction: column; gap: 8px; max-height: 540px; overflow-y: auto; }
+.lineage-seed-card { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); }
+.seed-card-title { font-weight: 600; color: var(--text); font-size: 13px; }
+.seed-card-meta { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+.seed-card-reason { font-size: 12px; color: var(--accent); margin-top: 4px; }
+.seed-card-actions { display: flex; flex-direction: column; gap: 6px; flex: 0 0 auto; }
+
+/* 通用领域 Skill 管理弹窗 */
+.domain-skill-list { display: flex; flex-direction: column; gap: 8px; max-height: 300px; overflow-y: auto; margin-bottom: 14px; }
+.domain-skill-card { padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); }
+.dsc-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dsc-badge { font-size: 10px; padding: 2px 7px; border-radius: 8px; background: var(--accent-weak); color: var(--accent); }
+.dsc-summary { font-size: 12px; color: var(--text-2); margin-top: 6px; }
+.dsc-steps { margin-top: 6px; padding-left: 18px; font-size: 11px; color: var(--text-3); }
+.domain-skill-import { padding: 12px; border: 1px dashed var(--border-strong); border-radius: 8px; background: var(--surface-2); }
+.dsi-title { display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 12px; margin-bottom: 8px; }
+.dsi-row { display: flex; gap: 6px; flex-wrap: wrap; }
+
+body.theme-neo .lineage-syn-card,
+body.theme-neo .lineage-matrix-wrap { background: rgba(20, 26, 44, 0.78); border-color: rgba(120, 150, 220, 0.2); }
+body.theme-neo .lineage-hydrate-banner { background: rgba(184, 134, 11, 0.16); border-color: rgba(245, 192, 66, 0.45); }
+@media (max-width: 1080px) {
+  .lineage-syn-grid, .lineage-missing-grid { grid-template-columns: 1fr; }
+}
